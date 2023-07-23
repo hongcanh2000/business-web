@@ -1,0 +1,130 @@
+.form__message {
+  margin-bottom: 120px;
+  @include max-width-576{
+    margin-bottom: 60px;
+  }
+  #form-ms {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0 208px;
+    @include max-width-1200 {
+      padding: 0 140px;
+    }
+    @include max-width-768 {
+      padding: 0;
+    }
+    .your__message {
+      margin-bottom: 40px;
+      &-label {
+        margin-bottom: 16px;
+        color: $text-color;
+      }
+      &-input {
+        width: 97%;
+        height: 240px;
+        border-radius: 24px;
+        color: $text-color;
+        border: 2px solid $text-color;
+        outline: none;
+        @include max-width-992 {
+          width: 94%;
+          height: 130px;
+          border: 1px solid $text-color;
+        }
+        @include max-width-576 {
+          height: 80px;
+        }
+      }
+      &-input:focus {
+        border: 2px solid $primary-color;
+      }
+    }
+  }
+  .form-user {
+    margin-bottom: 40px;
+    .info__user {
+      display: flex;
+      flex-direction: column;
+      &-label {
+        margin-bottom: 16px;
+        color: $text-color;
+      }
+      &-input {
+        height: 64px;
+        color: $text-color;
+        border-radius: 24px;
+        width: 100%;
+        border: 1px solid $text-color;
+        outline: none;
+        @include max-width-576 {
+          height: 42px;
+        }
+      }
+      &-input:focus {
+        border: 2px solid $primary-color;
+      }
+    }
+  }
+}
+
+.tab {
+  margin-bottom: 40px;
+  .tab__list {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .tab__list-item {
+      padding: 0 20px;
+      color: #e6e6e6;
+      @include max-width-425 {
+        padding: 0 5px;
+      }
+    }
+    .tab-active {
+      font-weight: 600;
+      color: #2e2e2e;
+      border-bottom: 2px solid $primary-color;
+    }
+  }
+}
+.contact__info-list {
+  margin-bottom: 120px;
+  @include max-width-576{
+    margin-bottom: 60px;
+  }
+  .contact__info-item {
+    .contact-info {
+      border-radius: 16px;
+      .contact__info-img{
+        height: 288px;
+        & img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 16px;
+        }
+
+      }
+      .contact__info-address {
+        padding: 24px;
+        &-item {
+          display: flex;
+          align-items: center;
+          margin-bottom: 24px;
+        }
+        &-item p {
+          margin-left: 16px;
+        }
+        .contact__info-link {
+          margin-top: 40px;
+        }
+      }
+    }
+  }
+  .contact-info:hover {
+    background-color: white;
+    box-shadow: 0px 24px 160px rgba(0, 0, 0, 0.1);
+  }
+}

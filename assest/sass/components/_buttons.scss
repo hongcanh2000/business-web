@@ -1,0 +1,154 @@
+#scroll_to_top-btn{
+  transition: 0.4s;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  display: none;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: none;
+  background-color: rgba($primary-color,0.8);
+  z-index: 999;
+  color: $secondary-color;
+  @include max-width-576{
+    bottom: 20px;
+    right: 20px;
+  }
+}
+
+.header__button {
+  width: 160px;
+  height: 40px;
+  border-radius: 30px;
+  @include max-width-992 {
+    display: none;
+  }
+}
+.btn-green {
+  background-color: $primary-color;
+  & a {
+    color: $secondary-color;
+  }
+}
+.social {
+  &__list {
+    display: flex;
+    &-item {
+      margin-left: 12px;
+      width: 24px;
+      background-color: $primary-color;
+      border-radius: 50%;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @include max-width-1200 {
+        margin-left: 6px;
+      }
+    }
+  }
+  @include max-width-992 {
+    display: none;
+  }
+}
+
+.btn__list-menu {
+  @include min-width-992 {
+    display: none;
+  }
+}
+.service__info-btn {
+  border: 1px solid $primary-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  & a {
+    color: $primary-color;
+  }
+}
+
+.service__item-icon {
+  height: 64px;
+  width: 64px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service__item-link {
+  display: flex;
+  &-text {
+    padding-right: 14px;
+    color: $primary-color;
+    & h5 {
+      font-weight: 600;
+    }
+  }
+  &-icon {
+    color: $primary-color;
+  }
+}
+
+.bg-green {
+  background-color: #edf8f4;
+  .icon-green {
+    color: $primary-color;
+  }
+}
+
+.bg-orange {
+  background-color: #fff0e9;
+  .icon-orange {
+    color: orange;
+  }
+}
+
+.bg-red {
+  background-color: #fff0e9;
+  .icon-red {
+    color: red;
+  }
+}
+
+.bg-blue {
+  background-color: #e9eefb;
+  .icon-blue {
+    color: blue;
+  }
+}
+
+.btn__arrow {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  &-item {
+    margin-left: 40px;
+  }
+  &-left {
+    color: $text-color;
+  }
+}
+
+.btn-send {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  background: #2abb64;
+  border-radius: 40px;
+  width: 120px;
+  height: 48px;
+  border: none;
+  color: $secondary-color;
+}
+
+.btn-send-message {
+  background: #2abb64;
+  border-radius: 40px;
+  width: 160px;
+  height: 48px;
+  border: none;
+  color: $secondary-color;
+  margin-left: 12px;
+}

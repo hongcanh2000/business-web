@@ -1,0 +1,68 @@
+.header__top {
+  background-color: #edf8f4;
+  width: 100%;
+  @include max-width-576 {
+    display: none;
+  }
+  .info__contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 72px;
+    position: relative;
+    padding-top: 12px;
+    .store__contact {
+      position: absolute;
+      left: 0;
+      .info__contact-list {
+        display: flex;
+        list-style-type: none;
+        padding-left: 0;
+        .info__contact-item {
+          color: $text-color;
+          display: flex;
+          align-items: center;
+          margin-right: 30px;
+          .icon__header {
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+    .social {
+      position: absolute;
+      right: 0;
+    }
+  }
+}
+
+.header__bottom {
+  background-color: #edf8f4;
+  width: 100%;
+  .header__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 104px;
+    .list__menu-mobile {
+      display: flex;
+      flex-direction: column;
+    }
+    .header__menu {
+      &-list {
+        display: flex;
+        .header__menu-item {
+          margin: 0 24px;
+          color: $text-color;
+        }
+        .menu__item-active {
+          font-weight: 700;
+          color: #2e2e2e;
+        }
+      }
+      @include max-width-992 {
+        display: none;
+      }
+    }
+  }
+}

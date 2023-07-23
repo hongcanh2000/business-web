@@ -1,0 +1,16 @@
+.tag{
+    height: 24px;
+    width: 77px;
+    color: $secondary-color;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    border-radius: 8px;
+    position: absolute;
+    top: 24px;
+    left: 24px;
+}
+
+.tag-blue{
+    background-color: $primary-color;
+}

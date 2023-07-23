@@ -1,0 +1,135 @@
+.banner__blog {
+  background-color: #edf8f4;
+  margin-bottom: 120px;
+  @include max-width-576{
+    margin-bottom: 60px;
+  }
+  .banner__info {
+    padding: 120px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include max-width-576{
+      padding: 60px 0;
+    }
+  }
+  .banner__info h2 {
+    font-weight: 700;
+    font-size: 64px;
+  }
+}
+.blog__list {
+  margin-bottom: 30px;
+  .blog__item {
+    border-radius: 16px;
+    &-img {
+      position: relative;
+      margin-bottom: 16px;
+    }
+    &-img{
+      height: 200px;
+      & img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    &-info {
+      padding: 16px;
+      .blog__item-content {
+        margin-bottom: 8px;
+        & h4 {
+          font-weight: 700;
+        }
+      }
+      .blog__item-title {
+        line-height: 32px;
+        color: $text-color;
+        margin-bottom: 33px;
+      }
+      .blog__item-link {
+        display: flex;
+        &-text {
+          padding-right: 14px;
+          color: $primary-color;
+          & h5 {
+            font-weight: 600;
+          }
+        }
+        &-icon {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+}
+.blog__load {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 90px;
+  @include max-width-576{
+    margin-bottom: 60px;
+  }
+}
+
+.blog__lastest-list {
+  margin-bottom: 80px;
+  @include max-width-576{
+    margin-bottom: 40px;
+  }
+  .blog__lastest-item {
+    display: flex;
+    @include max-width-992 {
+      margin-bottom: 10px;
+    }
+    @include max-width-576 {
+      display: block;
+    }
+    &-img {
+      position: relative;
+      @include max-width-576 {
+        width: auto;
+      }
+    }
+    &-img img {
+      @include max-width-576 {
+        width: 100%;
+        border-radius: 8px;
+      }
+    }
+    .blog__lastest-info {
+      padding: 24px;
+      .blog__lastest-content {
+        margin-bottom: 16px;
+        @include webkit-box(3);
+      }
+      .blog__lastest-content h4 {
+        font-weight: 700;
+      }
+      .blog__lastest-title {
+        line-height: 32px;
+        color: $text-color;
+        margin-bottom: 32px;
+        @include webkit-box(3);
+        @include max-width-576{
+          margin-bottom: 16px;
+        }
+      }
+      .service__item-link {
+        display: flex;
+        &-text {
+          padding-right: 14px;
+          color: $primary-color;
+          & h5 {
+            font-weight: 600;
+          }
+        }
+        &-icon {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+}

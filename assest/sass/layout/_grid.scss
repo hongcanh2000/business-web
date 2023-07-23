@@ -1,0 +1,16 @@
+.clients__list{
+    display: grid;
+    @include min-width-1200{
+        grid-template-columns: repeat(5, 1fr);
+        gap: 106px;
+    }
+    .clients__item{
+        height: 100px;
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        @include max-width-1200{
+            padding: 0 6px;
+        }
+    }
+}
